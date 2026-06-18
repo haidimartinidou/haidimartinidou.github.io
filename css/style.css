@@ -194,9 +194,10 @@ section { padding: 76px 0; position: relative; }
 .medium-head .count { font-size: 14px; color: var(--ink-soft); font-family: var(--font-hand); font-size: 20px; }
 .medium-head .desc { color: var(--ink-soft); font-size: 15px; max-width: 460px; }
 
-.gallery { display: grid; gap: 22px; }
-.gallery.two { grid-template-columns: repeat(2, 1fr); }
-.gallery.three { grid-template-columns: repeat(3, 1fr); }
+.gallery { display: flex; flex-wrap: wrap; gap: 22px; justify-content: center; }
+.gallery.two .frame { flex: 0 1 calc((100% - 22px) / 2); }
+.gallery.three .frame { flex: 0 1 calc((100% - 44px) / 3); }
+.gallery .frame { min-width: 0; }
 
 /* picture in a gallery mat */
 .frame { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 14px 14px 10px;
@@ -272,7 +273,8 @@ section { padding: 76px 0; position: relative; }
 @media (max-width: 880px) {
   .hero { grid-template-columns: 1fr; }
   .brain-stage { order: -1; min-height: 340px; }
-  .split, .projects, .gallery.two, .gallery.three, .about-grid { grid-template-columns: 1fr; }
+  .split, .projects, .about-grid { grid-template-columns: 1fr; }
+  .gallery.two .frame, .gallery.three .frame { flex-basis: 100%; }
   section { padding: 56px 0; }
 }
 
