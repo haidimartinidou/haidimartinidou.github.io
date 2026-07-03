@@ -1,16 +1,16 @@
 ---
-layout: default
-title: Articles
+layout: page
+title: Odd Things
 permalink: /articles/
 ---
-<h1>Articles</h1>
-<ul class="article-grid">
+<ol class="index-list">
   {% for post in site.posts %}
-  <li class="article-card">
-    <span class="card-date">{{ post.date | date: "%-d %b %Y" }}</span>
-    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    <p>{{ post.excerpt | strip_html | truncatewords: 24 }}</p>
-    <a class="read-more" href="{{ post.url | relative_url }}">Read &rarr;</a>
+  <li class="index-row">
+    <span class="index-num">{{ forloop.index | plus: 100 | slice: 1, 2 }}</span>
+    <div class="index-content">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="index-meta">{{ post.date | date: "%-d %b %Y" }} &mdash; {{ post.excerpt | strip_html | truncatewords: 20 }}</span>
+    </div>
   </li>
   {% endfor %}
-</ul>
+</ol>

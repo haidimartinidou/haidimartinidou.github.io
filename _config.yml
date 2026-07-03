@@ -1,14 +1,16 @@
 title: "Haidi Martinidou"
-description: "[HAIDI: one-line tagline, e.g. 'Computational & decision neuroscientist']"
+description: "Neuroscience researcher. I study the brain, behaviour, and the odd things humans do."
 url: "https://haidimartinidou.github.io"
 baseurl: ""
 
 # Pages appear in this order in the site nav (see _includes/header.html)
+# "Odd Things" is the public label; the underlying posts/URLs stay under
+# _posts/ and /articles/ since that's just plumbing, not a user-facing name.
 nav:
-  - title: Articles
-    url: /articles/
   - title: About
     url: /about/
+  - title: Odd Things
+    url: /articles/
   - title: CV
     url: /cv/
 

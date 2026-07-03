@@ -3,18 +3,42 @@ layout: default
 title: Home
 ---
 <section class="hero">
-  <h1>Haidi Martinidou</h1>
-  <p>[HAIDI: one or two sentences introducing yourself here &mdash; e.g. "Computational and decision neuroscientist working on X. This is where I write about Y."]</p>
+  <h1>Neuroscience researcher</h1>
+  <p>I study the brain, behaviour, and the odd things humans do.</p>
 </section>
 
-<h2>Recent articles</h2>
-<ul class="article-grid">
-  {% for post in site.posts limit:6 %}
-  <li class="article-card">
-    <span class="card-date">{{ post.date | date: "%-d %b %Y" }}</span>
-    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    <p>{{ post.excerpt | strip_html | truncatewords: 24 }}</p>
-    <a class="read-more" href="{{ post.url | relative_url }}">Read &rarr;</a>
-  </li>
-  {% endfor %}
-</ul>
+<section class="home-block">
+  <div class="block-head">
+    <span class="block-index">01</span>
+    <h2>Odd Things</h2>
+  </div>
+  <ol class="index-list index-list--tight">
+    {% for post in site.posts limit:4 %}
+    <li class="index-row">
+      <span class="index-num">{{ forloop.index | plus: 100 | slice: 1, 2 }}</span>
+      <div class="index-content">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="index-meta">{{ post.date | date: "%-d %b %Y" }} &mdash; {{ post.excerpt | strip_html | truncatewords: 16 }}</span>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+  <a class="block-link" href="{{ '/articles/' | relative_url }}">All odd things &rarr;</a>
+</section>
+
+<section class="home-block">
+  <div class="block-head">
+    <span class="block-index">02</span>
+    <h2>About</h2>
+  </div>
+  <p>[HAIDI: one-sentence teaser about yourself for the homepage.]</p>
+  <a class="block-link" href="{{ '/about/' | relative_url }}">Read more &rarr;</a>
+</section>
+
+<section class="home-block">
+  <div class="block-head">
+    <span class="block-index">03</span>
+    <h2>CV</h2>
+  </div>
+  <a class="cv-download" href="{{ '/assets/cv/haidi-martinidou-cv.pdf' | relative_url }}" download>Download CV (PDF)</a>
+</section>
