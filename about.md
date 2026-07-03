@@ -12,4 +12,6 @@ I'm Haidi Martinidou, a neuroscience researcher. I hold an MSc in Psychology & N
 
 My artistic synapses live inside [haidiartin](https://haidimartinidou.github.io/haidiartin/).
 
+Find me on [LinkedIn](https://www.linkedin.com/in/haidi-martinidou-9b2702173/) or [ORCID](https://orcid.org/0000-0002-6281-2763).
+
 [HAIDI: optional, a line or two more on interests outside research, and a contact email if you want people to reach you.]
