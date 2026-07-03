@@ -1,0 +1,26 @@
+title: "Haidi Martinidou"
+description: "[HAIDI: one-line tagline, e.g. 'Computational & decision neuroscientist']"
+url: "https://haidi-martinidou.github.io"
+baseurl: ""
+
+# Pages appear in this order in the site nav (see _includes/header.html)
+nav:
+  - title: Articles
+    url: /articles/
+  - title: About
+    url: /about/
+  - title: CV
+    url: /cv/
+
+markdown: kramdown
+permalink: /articles/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules

@@ -1,0 +1,20 @@
+---
+layout: default
+title: Home
+---
+<section class="hero">
+  <h1>Haidi Martinidou</h1>
+  <p>[HAIDI: one or two sentences introducing yourself here &mdash; e.g. "Computational and decision neuroscientist working on X. This is where I write about Y."]</p>
+</section>
+
+<h2>Recent articles</h2>
+<ul class="article-grid">
+  {% for post in site.posts limit:6 %}
+  <li class="article-card">
+    <span class="card-date">{{ post.date | date: "%-d %b %Y" }}</span>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p>{{ post.excerpt | strip_html | truncatewords: 24 }}</p>
+    <a class="read-more" href="{{ post.url | relative_url }}">Read &rarr;</a>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,16 @@
+---
+layout: default
+title: Articles
+permalink: /articles/
+---
+<h1>Articles</h1>
+<ul class="article-grid">
+  {% for post in site.posts %}
+  <li class="article-card">
+    <span class="card-date">{{ post.date | date: "%-d %b %Y" }}</span>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p>{{ post.excerpt | strip_html | truncatewords: 24 }}</p>
+    <a class="read-more" href="{{ post.url | relative_url }}">Read &rarr;</a>
+  </li>
+  {% endfor %}
+</ul>
