@@ -1,6 +1,14 @@
 <header class="site-header">
   <div class="wrap">
-    <a class="site-title" href="{{ '/' | relative_url }}">Haidi Martinidou</a>
+    <a class="site-title" href="{{ '/' | relative_url }}">
+      <svg class="site-logo" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M 8,20 C 6,11 13,4 22,4 C 32,4 37,11 36,19 C 35,28 28,33 20,32 C 12,31 7,28 8,20 Z"
+              fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+        <path d="M 13,18 C 13,11 17,8 22,8 C 28,8 31,12 31,18"
+              fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+      </svg>
+      Haidi Martinidou
+    </a>
     <nav class="site-nav">
       {% for item in site.nav %}
         <a href="{{ item.url | relative_url }}"{% if page.url contains item.url %} class="active"{% endif %}>{{ item.title }}</a>

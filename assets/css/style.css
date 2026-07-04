@@ -56,6 +56,9 @@ h1, h2, h3 {
   row-gap: 10px;
 }
 .site-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 700;
   font-size: 1.05rem;
   letter-spacing: -0.01em;
@@ -63,6 +66,11 @@ h1, h2, h3 {
   border-bottom: none;
 }
 .site-title:hover { color: var(--ink-soft); }
+.site-logo {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
 .site-nav {
   display: flex;
   flex-wrap: wrap;
