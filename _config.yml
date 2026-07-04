@@ -11,6 +11,8 @@ nav:
     url: /about/
   - title: Odd Things
     url: /articles/
+  - title: Elsewhere
+    url: /elsewhere/
   - title: CV
     url: /cv/
 
