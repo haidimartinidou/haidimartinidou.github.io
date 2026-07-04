@@ -12,12 +12,15 @@ title: Home
     <span class="block-index">01</span>
     <h2>Odd Things</h2>
   </div>
+  {% assign favourites = site.posts | where: "favourite", true %}
+  {% assign rest = site.posts | where_exp: "post", "post.favourite != true" %}
+  {% assign ordered_posts = favourites | concat: rest %}
   <ol class="index-list index-list--tight">
-    {% for post in site.posts limit:4 %}
+    {% for post in ordered_posts limit:4 %}
     <li class="index-row">
       <span class="index-num">{{ forloop.index | plus: 100 | slice: 1, 2 }}</span>
       <div class="index-content">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% if post.favourite %} <span class="favourite-tag">&#9733; Favourite</span>{% endif %}
         <span class="index-meta">{{ post.date | date: "%-d %b %Y" }} &mdash; {{ post.excerpt | strip_html | truncatewords: 16 }}</span>
       </div>
     </li>
