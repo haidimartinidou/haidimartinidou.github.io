@@ -8,6 +8,23 @@ permalink: /elsewhere/
   <li class="home-block">
     <div class="block-head">
       <span class="block-index">01</span>
+      <h2>Research Studentship, University of Glasgow</h2>
+    </div>
+    <p>In August 2026 I'm spending a week as a research intern in the Anatomy Facility at the University of Glasgow, hosted by Dr Ourania Varsou (Senior Lecturer in Anatomy, School of Medicine, Dentistry and Nursing) under honorary affiliate status. It is also a small return, since my BSc in Neuroscience was at Glasgow too.</p>
+    <p>Most of the week is set aside for a paper Ourania and I are developing together on why generative AI models produce plausible but incorrect output, work that continues remotely once the visit ends. Around that, the schedule includes time in the facility connected to a prosection prepared from donated cadaveric tissue, a chance to shadow the development of imaging phantoms with research assistant Kate MacDiarmid, and a half-day at the university's Imaging Centre with Dr Michael Stringer to see MRI scanning in practice.</p>
+    <ul class="index-list index-list--tight">
+      <li class="index-row">
+        <div class="index-content">
+          <a href="https://www.gla.ac.uk/schools/medicine/staff/ouraniavarsou/">Dr Ourania Varsou, University of Glasgow</a>
+          <span class="index-meta">Host and collaborator for the visit and the GenAI paper.</span>
+        </div>
+      </li>
+    </ul>
+  </li>
+
+  <li class="home-block">
+    <div class="block-head">
+      <span class="block-index">02</span>
       <h2><a href="https://www.youtube.com/watch?v=N1QAtmpl3r0">Why GenAI Models Make Things Up</a></h2>
     </div>
     <div class="video-wrap">
@@ -23,7 +40,7 @@ permalink: /elsewhere/
 
   <li class="home-block">
     <div class="block-head">
-      <span class="block-index">02</span>
+      <span class="block-index">03</span>
       <h2>Parallaxi Magazine</h2>
     </div>
     <p>Parallaxi is a long-standing independent free press magazine based in Thessaloniki, Greece, with a strong focus on culture, public life, urban identity, and contemporary social commentary. For an international audience, it can be understood as a local cultural magazine and alternative city publication, similar in spirit to an independent city paper in the United States.</p>
