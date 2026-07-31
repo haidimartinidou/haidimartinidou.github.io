@@ -45,3 +45,4 @@ exclude:
   - package.json
   - package-lock.json
   - .github
+  - vendor
