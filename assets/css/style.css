@@ -276,6 +276,13 @@ blockquote p:last-child { margin-bottom: 0; }
   color: var(--ink-soft);
   margin: 0 0 16px;
 }
+.cv-aside {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: -6px 0 16px;
+}
+.cv-aside a { border-bottom: 1px solid var(--line-strong); }
 .cv-links {
   display: flex;
   flex-wrap: wrap;
@@ -336,6 +343,11 @@ blockquote p:last-child { margin-bottom: 0; }
   color: var(--ink-soft);
 }
 .cv-bullets li:last-child { margin-bottom: 0; }
+.cv-bullets--nested {
+  margin-top: 6px;
+  padding-left: 18px;
+}
+.cv-bullets--nested li { font-size: 0.92rem; }
 .cv-skill-group {
   margin: 0 0 10px;
   color: var(--ink-soft);

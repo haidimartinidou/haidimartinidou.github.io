@@ -8,6 +8,7 @@ permalink: /cv/
 <div class="cv-header">
   <p class="cv-tagline">{{ cv.personal_info.tagline }}</p>
   {% if cv.personal_info.summary %}<p class="cv-summary">{{ cv.personal_info.summary }}</p>{% endif %}
+  {% if cv.personal_info.aside %}<p class="cv-aside">{{ cv.personal_info.aside }}</p>{% endif %}
   <div class="cv-links">
     <a href="mailto:{{ cv.personal_info.email }}">{{ cv.personal_info.email }}</a>
     {%- if cv.personal_info.phone %}<span>{{ cv.personal_info.phone }}</span>{% endif -%}
@@ -96,7 +97,19 @@ permalink: /cv/
 <section class="cv-section">
   <h2>Conferences</h2>
   <ul class="cv-bullets">
-    {% for conf in cv.conferences %}<li>{{ conf.name }} &mdash; {{ conf.location }}, {{ conf.date }}</li>{% endfor %}
+    {% for conf in cv.conferences %}
+    <li>
+      {% if conf.url %}<a href="{{ conf.url }}">{{ conf.name }}</a>{% else %}{{ conf.name }}{% endif %}
+      &mdash; {{ conf.location }}, {{ conf.date }}
+      {%- if conf.highlights and conf.highlights.size > 0 %}
+      <ul class="cv-bullets cv-bullets--nested">
+        {% for highlight in conf.highlights %}
+        <li>{% if highlight.url %}<a href="{{ highlight.url }}">{{ highlight.title }}</a>{% else %}{{ highlight.title }}{% endif %}</li>
+        {% endfor %}
+      </ul>
+      {%- endif %}
+    </li>
+    {% endfor %}
   </ul>
 </section>
 {% endif %}

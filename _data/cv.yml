@@ -6,6 +6,7 @@ personal_info:
   name: "Haidi Martinidou"
   tagline: "Neuroscience graduate (BSc Glasgow, MSc King's College London) working toward a PhD in computational neuroscience."
   summary: "Combines quantitative training on large clinical/population datasets with hands-on patient-facing research experience."
+  aside: 'Multidisciplinary artist on the side — film and digital photography, painting, and watercolour; more at <a href="https://haidimartinidou.github.io/haidiartin/">haidiartin</a>.'
   interests: >
     My research interests concern the mechanisms underlying maladaptive decision-making and mood dysregulation,
     with particular attention to reward processing, prediction-error signalling, and reinforcement learning as
@@ -83,13 +84,13 @@ skills:
 courses:
   - name: "Computational Neuroscience: Neuronal Dynamics"
     provider: "EPFL (edX)"
-    date: "Ongoing"
+    date: "Paused"
   - name: "Medical Neuroscience"
     provider: "Duke University (Coursera)"
-    date: "Ongoing"
+    date: "Paused"
   - name: "Data Visualization"
     provider: "Duke University (Coursera)"
-    date: "Ongoing"
+    date: "Paused"
 
 # No formal publications yet. Add entries here as { citation: "..." } once
 # there are any; the section stays hidden on the page and in the PDF while
@@ -100,6 +101,16 @@ conferences:
   - name: "NeuroMonster Conference"
     location: "Rome"
     date: "June 2026"
+    url: "https://thinkingaboutthinking.org/neuromonster"
+  - name: "Greeks in AI 2026 Symposium"
+    location: "Athens"
+    date: "15–17 July 2026"
+    url: "https://www.greeksin.ai/"
+    highlights:
+      - title: 'Opening talk, "Foundational research in the time of AI" — Dr Christos Papadimitriou'
+        url: "https://www.greeksin.ai/papadimitriou"
+      - title: "NeuroAI panel — Constantine Dovrolis, Leontios J. Hadjileontiadis, Maria Papadopouli, Alexandros Potamianos, Stelios Smirnakis, Nektarios Tavernarakis"
+        url: "https://www.greeksin.ai/neuro-ai"
 
 references:
   - name: "Dr Ourania Varsou"
