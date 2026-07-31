@@ -1,0 +1,64 @@
+# Regenerates assets/cv/Haidi_Martinidou_CV.pdf from _data/cv.yml.
+# The PDF is a build artifact of that data file and should never be edited
+# by hand — edit _data/cv.yml instead and let this workflow update the PDF.
+name: Generate CV PDF
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "_data/cv.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+          bundler-cache: true
+
+      - name: Build and serve the site
+        run: |
+          bundle exec jekyll build
+          bundle exec jekyll serve --detach --skip-initial-build --port 4000
+
+      - name: Wait for local server
+        run: |
+          for i in $(seq 1 30); do
+            curl -sf http://localhost:4000/cv/ > /dev/null && exit 0
+            sleep 1
+          done
+          echo "Local site never came up" >&2
+          exit 1
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Puppeteer
+        run: npm install puppeteer@22
+
+      - name: Render CV to PDF
+        run: node .github/scripts/render-cv-pdf.js
+
+      - name: Commit PDF if it changed
+        run: |
+          if git diff --quiet -- assets/cv/Haidi_Martinidou_CV.pdf; then
+            echo "PDF unchanged, nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/cv/Haidi_Martinidou_CV.pdf
+          git commit -m "Auto-generate CV PDF from _data/cv.yml [skip ci]"
+          git push
