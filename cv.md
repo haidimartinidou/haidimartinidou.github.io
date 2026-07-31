@@ -6,6 +6,12 @@ permalink: /cv/
 
 {% assign cv = site.data.cv %}
 <div class="cv-header">
+  <h1 class="cv-print-name">{{ cv.personal_info.name }}</h1>
+  <p class="cv-print-contact">
+    <a href="mailto:{{ cv.personal_info.email }}">{{ cv.personal_info.email }}</a>
+    {%- if cv.personal_info.phone %} | {{ cv.personal_info.phone }}{% endif -%}
+    {% for link in cv.personal_info.links %} | <a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
+  </p>
   <p class="cv-tagline">{{ cv.personal_info.tagline }}</p>
   {% if cv.personal_info.summary %}<p class="cv-summary">{{ cv.personal_info.summary }}</p>{% endif %}
   {% if cv.personal_info.aside %}<p class="cv-aside">{{ cv.personal_info.aside }}</p>{% endif %}
