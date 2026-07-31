@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="post">
+  <a class="back-link" href="{{ '/projects/' | relative_url }}">&larr; Projects</a>
+  <h1>{{ page.title }} <span class="status-tag status-{{ page.status }}">{{ page.status }}</span></h1>
+  <p class="post-meta">
+    Started {{ page.date_started }}
+    {%- if page.repo_url %} &middot; <a href="{{ page.repo_url }}">Repository</a>{% endif -%}
+  </p>
+  {{ content }}
+</article>

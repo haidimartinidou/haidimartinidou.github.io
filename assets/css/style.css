@@ -199,6 +199,25 @@ main.wrap {
   white-space: nowrap;
 }
 
+/* Status tags (Projects) */
+.status-tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.status-tag.status-ongoing { border-color: var(--ink-soft); color: var(--ink-soft); }
+.status-tag.status-shipped { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.status-tag.status-paused { color: var(--ink-soft); border-style: dashed; }
+
 /* Post / page */
 h1 { font-size: 1.6rem; }
 .post-meta {
@@ -246,6 +265,89 @@ blockquote {
 }
 blockquote p { margin: 0 0 12px; }
 blockquote p:last-child { margin-bottom: 0; }
+
+/* CV */
+.cv-header { margin-bottom: 8px; }
+.cv-tagline {
+  font-size: 1.05rem;
+  margin: 0 0 10px;
+}
+.cv-summary {
+  color: var(--ink-soft);
+  margin: 0 0 16px;
+}
+.cv-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin-bottom: 20px;
+}
+.cv-links a { border-bottom: 1px solid var(--line-strong); }
+.cv-section {
+  border-top: 1px solid var(--line);
+  padding: 28px 0;
+}
+.cv-section:first-of-type { padding-top: 0; border-top: none; }
+.cv-section h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  margin: 0 0 18px;
+}
+.cv-entry { margin-bottom: 22px; }
+.cv-entry:last-child { margin-bottom: 0; }
+.cv-entry-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 16px;
+}
+.cv-entry-head h3 {
+  font-size: 1.02rem;
+  margin: 0;
+}
+.cv-dates {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.cv-org {
+  margin: 2px 0 8px;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+.cv-note {
+  margin: 0 0 8px;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  font-style: italic;
+}
+.cv-bullets {
+  margin: 0;
+  padding-left: 20px;
+}
+.cv-bullets li {
+  margin-bottom: 6px;
+  color: var(--ink-soft);
+}
+.cv-bullets li:last-child { margin-bottom: 0; }
+.cv-skill-group {
+  margin: 0 0 10px;
+  color: var(--ink-soft);
+}
+.cv-skill-group strong { color: var(--ink); }
+
+@media print {
+  .site-header, .site-footer, .cv-download, .back-link { display: none; }
+  .page, .post { max-width: 100%; padding-top: 0; }
+  .cv-section { padding: 14px 0; }
+  a { border-bottom: none; color: var(--ink); }
+}
 
 /* Elsewhere / feature list */
 .feature-list {

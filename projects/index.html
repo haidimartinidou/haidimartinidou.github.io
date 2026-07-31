@@ -1,0 +1,17 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+<ol class="index-list">
+  {% for project in site.projects %}
+  <li class="index-row">
+    <span class="index-num">{{ forloop.index | plus: 100 | slice: 1, 2 }}</span>
+    <div class="index-content">
+      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+      <span class="status-tag status-{{ project.status }}">{{ project.status }}</span>
+      <span class="index-meta">{{ project.summary }}</span>
+    </div>
+  </li>
+  {% endfor %}
+</ol>
