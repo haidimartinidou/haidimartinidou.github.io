@@ -85,6 +85,9 @@ skills:
   - category: "Languages"
     items: "Greek (native); English (fluent); French (basic, learning)."
 
+# A course with date: "Paused" stays visible on the live /cv/ page but is
+# automatically left out of the generated PDF (see cv.md's cv-print-hide
+# logic) — set date to something else to bring it back into the PDF.
 courses:
   - name: "Computational Neuroscience: Neuronal Dynamics"
     provider: "EPFL (edX)"

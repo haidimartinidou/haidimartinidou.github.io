@@ -16,7 +16,7 @@ const outPath = process.env.CV_PDF_PATH || "assets/cv/Haidi_Martinidou_CV.pdf";
       path: outPath,
       format: "A4",
       printBackground: true,
-      margin: { top: "18mm", bottom: "18mm", left: "16mm", right: "16mm" },
+      margin: { top: "13mm", bottom: "13mm", left: "14mm", right: "14mm" },
     });
   } finally {
     await browser.close();

@@ -355,10 +355,34 @@ blockquote p:last-child { margin-bottom: 0; }
 .cv-skill-group strong { color: var(--ink); }
 
 @media print {
-  .site-header, .site-footer, .cv-download, .back-link { display: none; }
+  .site-header, .site-footer, .cv-download, .back-link, .cv-print-hide { display: none !important; }
   .page, .post { max-width: 100%; padding-top: 0; }
-  .cv-section { padding: 14px 0; }
   a { border-bottom: none; color: var(--ink); }
+
+  html, body { font-size: 10.5pt; line-height: 1.4; }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+
+  .cv-header { margin-bottom: 2px; }
+  .cv-tagline { font-size: 1rem; margin: 0 0 5px; }
+  .cv-summary { margin: 0 0 5px; font-size: 0.92rem; }
+  .cv-aside { margin: -3px 0 5px; font-size: 0.85rem; }
+  .cv-links { margin-bottom: 8px; font-size: 0.82rem; gap: 3px 12px; }
+
+  .cv-section { padding: 7px 0; }
+  .cv-section h2 { font-size: 0.8rem; margin: 0 0 7px; }
+
+  p { margin: 0 0 6px; }
+  .cv-entry { margin-bottom: 8px; }
+  .cv-entry-head h3 { font-size: 0.95rem; }
+  .cv-dates { font-size: 0.78rem; }
+  .cv-org, .cv-note { margin: 1px 0 3px; font-size: 0.85rem; }
+
+  .cv-bullets { padding-left: 16px; }
+  .cv-bullets li { margin-bottom: 2px; font-size: 0.88rem; }
+  .cv-bullets--nested { margin-top: 2px; }
+  .cv-bullets--nested li { font-size: 0.84rem; }
+
+  .cv-skill-group { margin: 0 0 3px; font-size: 0.88rem; }
 }
 
 /* Elsewhere / feature list */

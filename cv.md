@@ -70,12 +70,13 @@ permalink: /cv/
 </section>
 {% endif %}
 
+{% assign active_courses = cv.courses | where_exp: "c", "c.date != 'Paused'" %}
 {% if cv.courses and cv.courses.size > 0 %}
-<section class="cv-section">
+<section class="cv-section{% if active_courses.size == 0 %} cv-print-hide{% endif %}">
   <h2>Courses</h2>
   <ul class="cv-bullets">
     {% for course in cv.courses %}
-    <li>
+    <li{% if course.date == "Paused" %} class="cv-print-hide"{% endif %}>
       {% if course.certificate_url %}<a href="{{ course.certificate_url }}">{{ course.name }}</a>{% else %}{{ course.name }}{% endif %}
       &mdash; {{ course.provider }}{% if course.date %}, {{ course.date }}{% endif %}{% if course.note %} ({{ course.note }}){% endif %}
     </li>
