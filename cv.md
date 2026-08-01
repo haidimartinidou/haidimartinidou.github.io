@@ -12,6 +12,7 @@ permalink: /cv/
     {%- if cv.personal_info.phone %} | {{ cv.personal_info.phone }}{% endif -%}
     {% for link in cv.personal_info.links %} | <a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
   </p>
+  <p class="cv-print-intro">{{ cv.personal_info.tagline }} {{ cv.personal_info.summary }} {{ cv.personal_info.aside }}</p>
   <p class="cv-tagline">{{ cv.personal_info.tagline }}</p>
   {% if cv.personal_info.summary %}<p class="cv-summary">{{ cv.personal_info.summary }}</p>{% endif %}
   {% if cv.personal_info.aside %}<p class="cv-aside">{{ cv.personal_info.aside }}</p>{% endif %}
@@ -26,7 +27,7 @@ permalink: /cv/
 {% if cv.personal_info.interests %}
 <section class="cv-section">
   <h2>Research Interests</h2>
-  <p>{{ cv.personal_info.interests }}</p>
+  <p class="cv-interests">{{ cv.personal_info.interests }}</p>
 </section>
 {% endif %}
 

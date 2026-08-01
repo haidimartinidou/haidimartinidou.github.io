@@ -9,6 +9,10 @@
 # personal_info.name/email/phone/links also feed the print-only centered
 # name/contact header in cv.md (the .cv-print-name / .cv-print-contact
 # block, styled in style.css) that appears only in the generated PDF.
+#
+# personal_info.tagline/summary/aside are also merged into one print-only
+# paragraph (.cv-print-intro) below that header — they stay as three
+# separate lines on the live page.
 
 personal_info:
   name: "Haidi Martinidou"

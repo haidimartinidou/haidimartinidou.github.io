@@ -268,7 +268,7 @@ blockquote p:last-child { margin-bottom: 0; }
 
 /* CV */
 .cv-header { margin-bottom: 8px; }
-.cv-print-name, .cv-print-contact { display: none; }
+.cv-print-name, .cv-print-contact, .cv-print-intro { display: none; }
 .cv-tagline {
   font-size: 1.05rem;
   margin: 0 0 10px;
@@ -382,12 +382,13 @@ blockquote p:last-child { margin-bottom: 0; }
   .cv-print-contact a { color: #0563c1; text-decoration: underline; border-bottom: none; }
   .cv-links { display: none; }
 
-  .cv-tagline { font-size: 8.5pt; margin: 0 0 5px; }
-  .cv-summary { margin: 0 0 5px; font-size: 0.92rem; }
-  .cv-aside { margin: -3px 0 5px; font-size: 0.85rem; }
+  .cv-tagline, .cv-summary, .cv-aside { display: none; }
+  .cv-print-intro { display: block; font-size: 10pt; margin: 0 0 8px; }
+  .cv-print-intro a { color: #0563c1; text-decoration: underline; border-bottom: none; }
 
   .cv-section { padding: 7px 0; }
   .cv-section h2 { font-size: 0.8rem; margin: 0 0 7px; }
+  .cv-interests { font-size: 8pt; }
 
   p { margin: 0 0 6px; }
   .cv-entry { margin-bottom: 8px; }
