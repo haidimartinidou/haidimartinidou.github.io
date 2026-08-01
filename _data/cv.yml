@@ -10,23 +10,22 @@
 # name/contact header in cv.md (the .cv-print-name / .cv-print-contact
 # block, styled in style.css) that appears only in the generated PDF.
 #
-# personal_info.tagline/summary/aside are also merged into one print-only
-# paragraph (.cv-print-intro) below that header — they stay as three
-# separate lines on the live page.
+# personal_info.tagline/summary are merged into one print-only paragraph
+# (.cv-print-intro) below that header, without aside; on the live page all
+# three (tagline/summary/aside) still show as separate lines.
 
 personal_info:
   name: "Haidi Martinidou"
   tagline: "Neuroscience graduate (BSc Glasgow, MSc King's College London) working toward a PhD in computational neuroscience."
-  summary: "Combines quantitative training on large clinical/population datasets with hands-on patient-facing research experience."
+  summary: "Combines quantitative training on large clinical and population datasets with hands-on patient-facing research experience."
   aside: 'Multidisciplinary artist on the side — film and digital photography, painting, and watercolour; more at <a href="https://haidimartinidou.github.io/haidiartin/">haidiartin</a>.'
   interests: >
-    My research interests concern the mechanisms underlying maladaptive decision-making and mood dysregulation,
-    with particular attention to reward processing, prediction-error signalling, and reinforcement learning as
-    they operate across both healthy and clinical populations. This thread runs through my work to date, from
-    fairness-based decision-making to diet-related depression risk. I am additionally interested in subtler,
-    non-clinical disruptions to self-regulation and choice behaviour, including procrastination, optimism, and
-    hormonal influences on cognition. My training is grounded in neuroscience and psychology, and I aim to
-    approach mechanistic questions primarily as a route toward identifying targets for intervention and treatment.
+    My research centres on the mechanisms underlying maladaptive decision-making and mood dysregulation,
+    particularly reward processing, prediction-error signalling, and reinforcement learning across healthy
+    and clinical populations. This thread connects my past work on fairness-based decision-making and
+    diet-related depression risk. I am also interested in subtler, non-clinical disruptions to
+    self-regulation, including procrastination, optimism, and hormonal influences on cognition. I approach
+    these mechanistic questions as a route toward identifying targets for intervention.
   email: "haidimartinidou@gmail.com"
   phone: "+30 694 2419907"
   links:
