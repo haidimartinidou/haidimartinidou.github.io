@@ -77,6 +77,9 @@ h1, h2, h3 {
   gap: 24px;
 }
 .site-nav a {
+  display: inline-block;
+  padding: 10px 4px;
+  margin: -10px -4px;
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--ink-soft);
@@ -152,6 +155,9 @@ main.wrap {
   margin: 0 0 16px;
 }
 .block-link {
+  display: inline-block;
+  padding: 8px 0;
+  margin: -8px 0;
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -163,6 +169,7 @@ main.wrap {
   padding: 0;
 }
 .index-row {
+  position: relative;
   display: flex;
   gap: 20px;
   padding: 18px 0;
@@ -184,6 +191,11 @@ main.wrap {
   border-bottom: none;
 }
 .index-content a:hover { color: var(--ink-soft); }
+.index-content a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
 .index-meta {
   display: block;
   margin-top: 4px;
@@ -227,7 +239,8 @@ h1 { font-size: 1.6rem; }
 }
 .back-link {
   display: inline-block;
-  margin-bottom: 24px;
+  padding: 8px 0;
+  margin: -8px 0 16px;
   font-size: 0.85rem;
   color: var(--ink-soft);
   border-bottom: none;
@@ -434,11 +447,16 @@ code, pre {
 pre { padding: 14px; overflow-x: auto; }
 
 @media (max-width: 560px) {
+  .wrap { padding: 0 20px; }
   .site-header .wrap {
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
-  .site-nav { gap: 18px; }
+  .site-nav { gap: 8px 20px; }
+  .hero { padding: 36px 0 28px; }
   .hero h1 { font-size: 1.6rem; }
-  .index-row { gap: 14px; }
+  .home-block { padding: 28px 0; }
+  .index-row { gap: 14px; padding: 14px 0; }
 }
