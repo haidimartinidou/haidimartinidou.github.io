@@ -35,6 +35,8 @@ personal_info:
       url: "https://www.linkedin.com/in/haidi-martinidou-9b2702173/"
     - label: "GitHub"
       url: "https://github.com/haidimartinidou"
+    - label: "ORCID"
+      url: "https://orcid.org/0000-0002-6281-2763"
 
 education:
   - degree: "MSc Psychology and Neuroscience of Mental Health (Merit)"
@@ -46,18 +48,27 @@ education:
     note: "Advanced entry; Class Representative, 2020–2021."
 
 experience:
-  - title: "Research Intern (incoming)"
+  - title: "Research Intern, Anatomy Facility"
     organization: "University of Glasgow"
     dates: "Aug 2026"
     bullets:
-      - "Affiliate researcher status via Dr Ourania Varsou; co-writing a manuscript on generative AI in anatomical education."
-      - "Planned shadowing at the university's Imaging Centre and of phantom development work."
+      - "Week-long research internship under honorary affiliate status, hosted by Dr Ourania Varsou (Senior Lecturer in Anatomy)."
+      - "Co-writing a manuscript on generative AI in education; collaboration continues remotely."
+      - "AAUP exchange-programme study (academic exchange in medical education for participants from conflict-affected areas): questionnaire data entry and cleaning, and initial codebook and composite-score design for the analysis."
+      - "Shadowed imaging-phantom development and observed MRI scanning at the university's Imaging Centre."
   - title: "Independent Research Project — EEG Analysis (OpenMIIR)"
     dates: "2026 (ongoing)"
     bullets:
       - "Self-directed, four-stage EEG pipeline on the OpenMIIR music-imagery dataset: preprocessing, stimulus predictor modelling, TRF encoding, and a generative predictive-coding simulation."
       - "Using IDyOM to derive per-note surprise and entropy values as predictors of the EEG response to heard and imagined melodies; preprocessing and acoustic predictor stages complete, symbolic (IDyOM) modelling stage in progress."
       - "Reproducible, version-controlled codebase, built and maintained independently alongside formal coursework."
+  - title: "Fieldwork Specialist"
+    organization: "IQVIA, Athens"
+    dates: "2024 – Mar 2026"
+    bullets:
+      - "Coordinated end-to-end patient recruitment for non-interventional clinical research across roughly 20 therapeutic areas, from common chronic conditions to rare diseases, managing initial contact, screening, consent, documentation, diagnosis verification, and scheduling."
+      - "Worked directly with sensitive health data and real-world clinical populations, gaining a practical understanding of the operational demands of recruiting and retaining participants for human-subjects research at scale."
+      - "Liaised with project managers and patient organisations; recognised internally as \"Excel and AI Champion\" for process improvements that strengthened operational continuity."
   - title: "Master's Dissertation — Reward, Risk, and Fairness Processing"
     organization: "King's College London"
     dates: "2022 – 2023"
@@ -74,23 +85,49 @@ experience:
       - "Analysed UK Biobank data (N = 502,506) using binary logistic regression in R."
       - "Engineered a novel dietary-adherence variable in the absence of a ready-made measure, and controlled for multiple confounders; found a modest protective association (OR ≈ 0.91)."
       - "Supervisor: Dr Donald Lyall."
-  - title: "Fieldwork Specialist"
-    organization: "IQVIA, Athens"
-    dates: "2024 – Mar 2026"
-    bullets:
-      - "Coordinated end-to-end patient recruitment for non-interventional clinical research across roughly 20 therapeutic areas, from common chronic conditions to rare diseases, managing initial contact, screening, consent, documentation, diagnosis verification, and scheduling."
-      - "Worked directly with sensitive health data and real-world clinical populations, gaining a practical understanding of the operational demands of recruiting and retaining participants for human-subjects research at scale."
-      - "Liaised with project managers and patient organisations; recognised internally as \"Excel and AI Champion\" for process improvements that strengthened operational continuity."
-
 skills:
   - category: "Programming & analysis"
-    items: "R (statistical modelling, regression); Python (in progress, applied via the OpenMIIR/IDyOM pipeline and the Stanford Statistical Learning course)."
+    items: "R (statistical modelling, regression); Python (MNE-based EEG preprocessing, ICA, epoching; applied in the OpenMIIR/IDyOM pipeline and the Stanford Statistical Learning course); running IDyOM (Common Lisp)."
   - category: "Research methods"
     items: "Neuroimaging literature synthesis (fMRI, EEG, PET, TMS, tDCS); large-scale dataset management (UK Biobank); EEG signal processing basics (OpenMIIR/IDyOM)."
   - category: "Other"
-    items: "Human-subjects recruitment and data handling; process documentation and handover; independent web development (see Projects)."
+    items: "Human-subjects recruitment and data handling; questionnaire data cleaning and codebook design; process documentation and handover; independent web development (see Independent Projects)."
   - category: "Languages"
     items: "Greek (native); English (fluent); French (basic, learning)."
+
+
+# Independent (non-research) builds. Rendered as "Independent Projects".
+projects:
+  - name: "ForFun"
+    date: "2026"
+    url: "https://github.com/haidimartinidou/forfun"
+    description: "Application tracker for programmes, jobs, and grants (Next.js, Supabase), with an AI-powered Discover tool that searches the web for opportunities."
+  - name: "VibeDeck"
+    date: "2026"
+    url: "https://github.com/haidimartinidou/Zanzibar"
+    description: "Spotify playlist and DJ-style web app, built end-to-end and deployed to Cloudflare Workers."
+  - name: "haidiartin"
+    date: "2026"
+    url: "https://haidimartinidou.github.io/haidiartin/"
+    description: "Hand-built portfolio site for film photography, painting, and watercolour."
+
+# Public-facing writing and talks. Rendered as "Science Communication".
+writing:
+  - title: "Why GenAI Models Make Things Up"
+    outlet: "GenAI Unpacked video series (guest author)"
+    url: "https://www.youtube.com/watch?v=N1QAtmpl3r0"
+  - title: "Do, re, mi, we got emotional: what Coldplay did in Athens"
+    outlet: "Parallaxi Magazine"
+    date: "June 2024"
+    url: "https://parallaximag.gr/parallax-view/nto-re-mi-giname-synaisthimatikoi-ti-ekanan-oi-coldplay-stin-athina"
+  - title: "The human brain and Silicon Valley"
+    outlet: "Parallaxi Magazine"
+    date: "March 2024"
+    url: "https://parallaximag.gr/parallax-view/anthropinos-egkefalos-kai-silicon-valley"
+  - title: "Essays on neuroscience and everyday behaviour (procrastination, mood, perception, wearables)"
+    outlet: "Personal website and LinkedIn"
+    date: "2025 – 2026"
+    url: "https://haidimartinidou.github.io/articles/"
 
 # A course with date: "Paused" stays visible on the live /cv/ page but is
 # automatically left out of the generated PDF (see cv.md's cv-print-hide

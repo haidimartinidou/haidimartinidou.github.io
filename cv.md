@@ -77,6 +77,33 @@ permalink: /cv/
 </section>
 {% endif %}
 
+{% if cv.projects and cv.projects.size > 0 %}
+<section class="cv-section">
+  <h2>Independent Projects</h2>
+  <ul class="cv-bullets">
+    {% for project in cv.projects %}
+    <li>
+      {% if project.url %}<a href="{{ project.url }}">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}{% if project.date %} ({{ project.date }}){% endif %} &mdash; {{ project.description }}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if cv.writing and cv.writing.size > 0 %}
+<section class="cv-section">
+  <h2>Science Communication</h2>
+  <ul class="cv-bullets">
+    {% for piece in cv.writing %}
+    <li>
+      {% if piece.url %}<a href="{{ piece.url }}">{{ piece.title }}</a>{% else %}{{ piece.title }}{% endif %}
+      &mdash; {{ piece.outlet }}{% if piece.date %}, {{ piece.date }}{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
 {% assign active_courses = cv.courses | where_exp: "c", "c.date != 'Paused'" %}
 {% if cv.courses and cv.courses.size > 0 %}
 <section class="cv-section{% if active_courses.size == 0 %} cv-print-hide{% endif %}">
