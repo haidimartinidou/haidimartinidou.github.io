@@ -48,27 +48,45 @@ education:
     note: "Advanced entry; Class Representative, 2020–2021."
 
 experience:
-  - title: "Research Intern, Anatomy Facility"
-    organization: "University of Glasgow"
-    dates: "Aug 2026"
+  - title: "Affiliate Researcher and Research Intern"
+    organization: "University of Glasgow, School of Medicine, Dentistry and Nursing (Glasgow and remote)"
+    dates: "Jul 2026 – present"
     bullets:
-      - "Week-long research internship under honorary affiliate status, hosted by Dr Ourania Varsou (Senior Lecturer in Anatomy)."
-      - "Co-writing a manuscript on generative AI in education; collaboration continues remotely."
-      - "AAUP exchange-programme study (academic exchange in medical education for participants from conflict-affected areas): questionnaire data entry and cleaning, and initial codebook and composite-score design for the analysis."
-      - "Shadowed imaging-phantom development and observed MRI scanning at the university's Imaging Centre."
+      - "Supervisor: Dr Ourania Varsou. Supporting an evaluation of the University of Glasgow–AAUP medical exchange programme for students studying in conflict-affected settings: entering and verifying questionnaire data, organising consent records and participant documentation."
+      - "Wrote the codebook, documented missing-data decisions, and built an analysis-ready workbook; running the quantitative analysis in R (demographics, descriptive statistics, composite scores, ranking analyses)."
+      - "Developed the qualitative reflexive thematic analysis (Braun and Clarke) from scratch: coding framework, themes, audit trail and coding matrices, integrated with the quantitative findings."
+      - "Wrote a literature review and publication strategy, and drafted the manuscript's Methods, Results and Discussion and an internship report. On-site week in Aug 2026 included shadowing imaging-phantom development and observing MRI scanning."
   - title: "Independent Research Project — EEG Analysis (OpenMIIR)"
     dates: "2026 (ongoing)"
     bullets:
       - "Self-directed, four-stage EEG pipeline on the OpenMIIR music-imagery dataset: preprocessing, stimulus predictor modelling, TRF encoding, and a generative predictive-coding simulation."
       - "Using IDyOM to derive per-note surprise and entropy values as predictors of the EEG response to heard and imagined melodies; preprocessing and acoustic predictor stages complete, symbolic (IDyOM) modelling stage in progress."
       - "Reproducible, version-controlled codebase, built and maintained independently alongside formal coursework."
-  - title: "Fieldwork Specialist"
-    organization: "IQVIA, Athens"
-    dates: "2024 – Mar 2026"
+  - title: "Patient Supporter (Fieldwork)"
+    organization: "IQVIA, Global Perspectives, Athens"
+    dates: "Nov 2024 – Feb 2026"
     bullets:
-      - "Coordinated end-to-end patient recruitment for non-interventional clinical research across roughly 20 therapeutic areas, from common chronic conditions to rare diseases, managing initial contact, screening, consent, documentation, diagnosis verification, and scheduling."
-      - "Worked directly with sensitive health data and real-world clinical populations, gaining a practical understanding of the operational demands of recruiting and retaining participants for human-subjects research at scale."
-      - "Liaised with project managers and patient organisations; recognised internally as \"Excel and AI Champion\" for process improvements that strengthened operational continuity."
+      - "Ran end-to-end participant recruitment for pharma-sponsored, non-interventional studies across roughly 20 therapeutic areas, including rare disease: first contact, eligibility screening, DocuSign e-consent, diagnosis verification, scheduling and participant payments."
+      - "Held 500+ conversations with patients and caregivers across 10+ projects, acting as recruitment lead on several."
+      - "Led recruitment and outreach for a study on VEXAS syndrome: sourced collaborators in the US, including the NIH group that first described the condition, engaged patient organisations in the US and UK, and worked with supporting neurologists."
+      - "Handled sensitive health data under clinical governance and GDPR (PII redaction, adverse-event reporting, study documentation and tracking). Recognised internally as \"Excel and AI Champion\"."
+  - title: "Merchandise Coordinator and Neuroscience Advisor (remote)"
+    organization: "MindHug, London"
+    dates: "Aug 2024 – Nov 2024"
+    bullets:
+      - "Managed end-to-end merchandise operations for workshops across 6 UK universities: sourcing, supplier coordination, budgeting and on-time delivery to events."
+      - "Partnered with the lead psychologist to audit workshop slides and materials, translating neuroscience concepts into clear language for student audiences."
+  - title: "Clinical Observership — rTMS"
+    organization: "NovelBrain, Greece"
+    dates: "Jul 2024"
+    bullets:
+      - "Prepared a review of recent rTMS literature for the clinical team, then observed the clinic's rTMS protocol."
+  - title: "HR Coordinator"
+    organization: "Caffeine Roastery SuperFoods, Thessaloniki"
+    dates: "Oct 2023 – Oct 2024"
+    bullets:
+      - "Built the HR function from the ground up at launch (recruitment, onboarding, core policies) for a team of 10."
+      - "Designed and ran structured interviews and onboarding, drawing on motivation and person–role fit."
   - title: "Master's Dissertation — Reward, Risk, and Fairness Processing"
     organization: "King's College London"
     dates: "2022 – 2023"
@@ -82,49 +100,61 @@ experience:
     dates: "2020 – 2021"
     subtitle: "\"The Association Between Mediterranean Diet and Depression Risk\""
     bullets:
-      - "Analysed UK Biobank data (N = 502,506) using binary logistic regression in R."
-      - "Engineered a novel dietary-adherence variable in the absence of a ready-made measure, and controlled for multiple confounders; found a modest protective association (OR ≈ 0.91)."
+      - "Analysed UK Biobank data (N = 502,359) using binary logistic regression in Stata, testing six Mediterranean-style dietary components (oily and non-oily fish, fruit, salad and raw vegetables, cooked vegetables, processed meat) against self-reported depression."
+      - "Used stepwise adjustment for age, sex, smoking, medication, area deprivation, education and month of assessment; small protective associations persisted, largest for oily fish (OR 0.90). Now being prepared as a manuscript."
       - "Supervisor: Dr Donald Lyall."
+  - title: "Living Support Assistant"
+    organization: "University of Glasgow, Kelvinhaugh Residences"
+    dates: "Sep 2019 – Jun 2020"
+    bullets:
+      - "Overnight on-call welfare cover (18:00–07:00) for student residents, responding to emergencies including mental-health crises and safety incidents."
+      - "Ran wellbeing check-ins and mediated flat conflicts; trained in Mental Health First Aid, First Aid, Fire and Life Safety, and mediation. Role ended due to COVID-19."
+
 skills:
-  - category: "Programming & analysis"
-    items: "R (statistical modelling, regression); Python (MNE-based EEG preprocessing, ICA, epoching; applied in the OpenMIIR/IDyOM pipeline and the Stanford Statistical Learning course); running IDyOM (Common Lisp)."
-  - category: "Research methods"
-    items: "Neuroimaging literature synthesis (fMRI, EEG, PET, TMS, tDCS); large-scale dataset management (UK Biobank); EEG signal processing basics (OpenMIIR/IDyOM)."
-  - category: "Other"
-    items: "Human-subjects recruitment and data handling; questionnaire data cleaning and codebook design; process documentation and handover; independent web development (see Independent Projects)."
+  - category: "Research and data"
+    items: "R (basic: descriptive statistics, regression, composite scores); Python (basic: MNE-based EEG preprocessing in the OpenMIIR pipeline); IBM SPSS; Stata; Excel (advanced); questionnaire data management and codebooks; reflexive thematic analysis; systematic literature screening and narrative synthesis; digital brain atlas tools (QuickNII, MeshView); running IDyOM (Common Lisp)."
+  - category: "Software"
+    items: "DocuSign, Notion, Obsidian, ClickUp, Canva Pro, Adobe Premiere, SoftOne, Microsoft Office, GitHub Pages."
+  - category: "Certificates"
+    items: "Mental Health First Aid, First Aid, Fire and Life Safety (University of Glasgow, 2019); adverse-event reporting and compliance training (IQVIA)."
   - category: "Languages"
     items: "Greek (native); English (fluent); French (basic, learning)."
-
+  - category: "Music and arts"
+    items: "Choir, Filippos Glee, Athens (2025–2026); jazz singing lessons; lead singer with local bands, including a fundraising concert (2016–2019); Megaro Mousikis Thessalonikis choir (2011–2014); violin, Conservatory of Northern Greece (2008–2014; lead violin 2012, awards of excellence); theatre training, Andreas Voutsinas drama school (2007–2014)."
 
 # Independent (non-research) builds. Rendered as "Independent Projects".
 projects:
   - name: "ForFun"
     date: "2026"
-    url: "https://github.com/haidimartinidou/forfun"
-    description: "Application tracker for programmes, jobs, and grants (Next.js, Supabase), with an AI-powered Discover tool that searches the web for opportunities."
+    url: "https://forfun-alpha.vercel.app"
+    description: "Designed and launched an application-tracking web app for programmes, jobs and grants, with a freemium AI search feature (Next.js, Supabase)."
   - name: "VibeDeck"
     date: "2026"
     url: "https://github.com/haidimartinidou/Zanzibar"
-    description: "Spotify playlist and DJ-style web app, built end-to-end and deployed to Cloudflare Workers."
-  - name: "haidiartin"
-    date: "2026"
+    description: "Turns a described \"vibe\" into a playlist via the Spotify API and an LLM; deployed to Cloudflare Workers."
+  - name: "Personal sites"
+    date: "2025 – 2026"
     url: "https://haidimartinidou.github.io/haidiartin/"
-    description: "Hand-built portfolio site for film photography, painting, and watercolour."
+    description: "Academic site and blog (Jekyll, GitHub Pages) and a hand-built art portfolio (haidiartin)."
 
 # Public-facing writing and talks. Rendered as "Science Communication".
 writing:
   - title: "Why GenAI Models Make Things Up"
-    outlet: "GenAI Unpacked video series (guest author)"
+    outlet: "GenAI Unpacked (YouTube, Dr O. Varsou): wrote the episode on AI hallucinations; 1,600+ views"
+    date: "2025"
     url: "https://www.youtube.com/watch?v=N1QAtmpl3r0"
-  - title: "Do, re, mi, we got emotional: what Coldplay did in Athens"
+  - title: "Contributing writer on neuroscience, AI, social commentary and modern history"
     outlet: "Parallaxi Magazine"
-    date: "June 2024"
-    url: "https://parallaximag.gr/parallax-view/nto-re-mi-giname-synaisthimatikoi-ti-ekanan-oi-coldplay-stin-athina"
+    date: "2023 – 2026"
   - title: "The human brain and Silicon Valley"
     outlet: "Parallaxi Magazine"
     date: "March 2024"
     url: "https://parallaximag.gr/parallax-view/anthropinos-egkefalos-kai-silicon-valley"
-  - title: "Essays on neuroscience and everyday behaviour (procrastination, mood, perception, wearables)"
+  - title: "Do, re, mi, we got emotional: what Coldplay did in Athens"
+    outlet: "Parallaxi Magazine"
+    date: "June 2024"
+    url: "https://parallaximag.gr/parallax-view/nto-re-mi-giname-synaisthimatikoi-ti-ekanan-oi-coldplay-stin-athina"
+  - title: "Odd Things: essays on neuroscience and behaviour, e.g. a neuro-computational account of procrastination"
     outlet: "Personal website and LinkedIn"
     date: "2025 – 2026"
     url: "https://haidimartinidou.github.io/articles/"
@@ -133,6 +163,10 @@ writing:
 # automatically left out of the generated PDF (see cv.md's cv-print-hide
 # logic) — set date to something else to bring it back into the PDF.
 courses:
+  - name: "IMB9345: Neuroscience Data Integration through Use of Digital Brain Atlases"
+    provider: "University of Oslo, Faculty of Medicine (Neural Systems Laboratory, EBRAINS)"
+    date: "Sep 2026"
+    note: "online PhD-level elective, 2 ECTS"
   - name: "Computational Neuroscience: Neuronal Dynamics"
     provider: "EPFL (edX)"
     date: "Paused"
@@ -143,10 +177,12 @@ courses:
     provider: "Duke University (Coursera)"
     date: "Paused"
 
-# No formal publications yet. Add entries here as { citation: "..." } once
-# there are any; the section stays hidden on the page and in the PDF while
-# this list is empty.
-publications: []
+# Entries render as plain text, in the order listed. Keep "in preparation"
+# items marked as such until they are submitted or posted as preprints.
+publications:
+  - citation: "Varsou O., Walters M., Martinidou H., et al. Evaluation of the University of Glasgow–AAUP medical exchange programme: a transferable framework (working title). In preparation."
+  - citation: "Martinidou H., Lyall D. M. Mediterranean-style dietary components and self-reported depression: a cross-sectional analysis of 502,506 UK adults in the UK Biobank cohort. In preparation; preprint planned."
+  - citation: "Martinidou H., Theotokis P. Review on how sustained AI use may reshape brain networks (working title). In preparation for Current Issues in Molecular Biology (MDPI), special issue \"Neural Networks in Molecular and Cellular Neurobiology\"."
 
 conferences:
   - name: "NeuroMonster Conference"
@@ -162,11 +198,14 @@ conferences:
         url: "https://www.greeksin.ai/papadimitriou"
       - title: "NeuroAI panel — Constantine Dovrolis, Leontios J. Hadjileontiadis, Maria Papadopouli, Alexandros Potamianos, Stelios Smirnakis, Nektarios Tavernarakis"
         url: "https://www.greeksin.ai/neuro-ai"
+  - name: "Neuroscience conferences, Royal College of Physicians and Surgeons of Glasgow"
+    location: "Glasgow"
+    date: "2018, 2019"
 
 references:
   - name: "Dr Ourania Varsou"
     affiliation: "University of Glasgow"
-    note: "Research collaborator, GenAI in anatomy education project. Email on request."
+    note: "Supervisor, affiliate research post and AAUP exchange-programme study. Email on request."
   - name: "Dr Donald Lyall"
     affiliation: "University of Glasgow"
     note: "BSc dissertation supervisor. Email on request."

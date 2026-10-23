@@ -11,12 +11,12 @@ permalink: /elsewhere/
       <h2>Research Studentship, University of Glasgow</h2>
     </div>
     <p>In August 2026 I spent a week as a research intern in the Anatomy Facility at the University of Glasgow, hosted by Dr Ourania Varsou (Senior Lecturer in Anatomy, School of Medicine, Dentistry and Nursing) under honorary affiliate status. It was also a small return, since my BSc in Neuroscience was at Glasgow too.</p>
-    <p>The visit carried two strands of work in parallel. One is a paper Ourania and I are developing together on generative AI in education, work that continues remotely now the visit has ended. The other is the AAUP exchange-programme study, which looks at what makes academic exchange in medical education work well for participants from conflict-affected areas; I worked through questionnaire data entry and cleaning, and started building the codebook and composite-score sheets behind the analysis, with the aim of shaping this into a transferable framework for running such exchanges successfully. Around that, the week included a chance to shadow the development of imaging phantoms with research assistant Kate MacDiarmid, and short time spent at the university's Imaging Centre with Dr Michael Stringer to see MRI scanning in practice.</p>
+    <p>The core of the work is the AAUP exchange-programme study, which continues remotely now the visit has ended. It looks at what makes academic exchange in medical education work well for participants from conflict-affected areas; I worked through questionnaire data entry and cleaning, and started building the codebook and composite-score sheets behind the analysis, with the aim of shaping this into a transferable framework for running such exchanges successfully. Around that, the week included a chance to shadow the development of imaging phantoms with research assistant Kate MacDiarmid, and short time spent at the university's Imaging Centre with Dr Michael Stringer to see MRI scanning in practice.</p>
     <ul class="index-list index-list--tight">
       <li class="index-row">
         <div class="index-content">
           <a href="https://www.gla.ac.uk/schools/medicine/staff/ouraniavarsou/">Dr Ourania Varsou, University of Glasgow</a>
-          <span class="index-meta">Host and collaborator for the visit and the GenAI paper.</span>
+          <span class="index-meta">Host and supervisor for the visit and the AAUP exchange-programme study.</span>
         </div>
       </li>
     </ul>
