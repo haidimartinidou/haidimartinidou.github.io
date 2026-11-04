@@ -46,16 +46,19 @@ education:
     institution: "University of Glasgow, UK"
     dates: "2018 – 2021"
     note: "Advanced entry; Class Representative, 2020–2021."
+  - degree: "PhD-level course IMB9345: Neuroscience Data Integration through Use of Digital Brain Atlases (2 ECTS, passed)"
+    institution: "University of Oslo, Faculty of Medicine (Neural Systems Laboratory, EBRAINS), Norway (online)"
+    dates: "Sep 2026"
 
 experience:
   - title: "Affiliate Researcher and Research Intern"
     organization: "University of Glasgow, School of Medicine, Dentistry and Nursing (Glasgow and remote)"
     dates: "Jul 2026 – present"
     bullets:
-      - "Supervisor: Dr Ourania Varsou. Supporting an evaluation of the University of Glasgow–AAUP medical exchange programme for students studying in conflict-affected settings: entering and verifying questionnaire data, organising consent records and participant documentation."
-      - "Wrote the codebook, documented missing-data decisions, and built an analysis-ready workbook; running the quantitative analysis in R (demographics, descriptive statistics, composite scores, ranking analyses)."
-      - "Developed the qualitative reflexive thematic analysis (Braun and Clarke) from scratch: coding framework, themes, audit trail and coding matrices, integrated with the quantitative findings."
-      - "Wrote a literature review and publication strategy, and drafted the manuscript's Methods, Results and Discussion and an internship report. On-site week in Aug 2026 included shadowing imaging-phantom development and observing MRI scanning."
+      - "Co-lead, with Dr Varsou (joint first authors), a mixed-methods evaluation of the University of Glasgow–AAUP medical exchange programme for students studying in conflict-affected settings (n = 20 survey respondents): entering and verifying questionnaire data, organising consent records and participant documentation."
+      - "Wrote the codebook, documented missing-data decisions, and built an analysis-ready workbook; ran the quantitative analysis in Excel — descriptive statistics, composite scores and modified Borda scoring — re-running all analyses after a participant exclusion."
+      - "Developed the qualitative reflexive thematic analysis (Braun and Clarke) from scratch: coding framework, themes, audit trail and coding matrices, integrated with the quantitative findings into a transferable framework for designing international medical exchange programmes."
+      - "Wrote a literature review and publication strategy, and drafted the manuscript's Methods, Results and Discussion and an internship report; wrote the abstract for submission to the 20th Annual University of Glasgow Learning &amp; Teaching Conference (April 2027). On-site week in Aug 2026 included shadowing imaging-phantom development and observing MRI scanning."
   - title: "Independent Research Project — EEG Analysis (OpenMIIR)"
     dates: "2026 (ongoing)"
     bullets:
@@ -67,9 +70,9 @@ experience:
     dates: "Nov 2024 – Feb 2026"
     bullets:
       - "Ran end-to-end participant recruitment for pharma-sponsored, non-interventional studies across roughly 20 therapeutic areas, including rare disease: first contact, eligibility screening, DocuSign e-consent, diagnosis verification, scheduling and participant payments."
-      - "Held 500+ conversations with patients and caregivers across 10+ projects, acting as recruitment lead on several."
+      - "Held 500+ conversations with patients and caregivers across 10+ projects, acting as recruitment lead on several; Patient-experience interviewer status."
       - "Led recruitment and outreach for a study on VEXAS syndrome: sourced collaborators in the US, including the NIH group that first described the condition, engaged patient organisations in the US and UK, and worked with supporting neurologists."
-      - "Handled sensitive health data under clinical governance and GDPR (PII redaction, adverse-event reporting, study documentation and tracking). Recognised internally as \"Excel and AI Champion\"."
+      - "Handled sensitive health data under clinical governance and GDPR and industry codes (BHBIA, EPHMRA) — PII redaction, adverse-event reporting, study documentation and tracking. Recognised internally as \"Excel and AI Champion\"."
   - title: "Merchandise Coordinator and Neuroscience Advisor (remote)"
     organization: "MindHug, London"
     dates: "Aug 2024 – Nov 2024"
@@ -83,7 +86,7 @@ experience:
       - "Prepared a review of recent rTMS literature for the clinical team, then observed the clinic's rTMS protocol."
   - title: "HR Coordinator"
     organization: "Caffeine Roastery SuperFoods, Thessaloniki"
-    dates: "Oct 2023 – Oct 2024"
+    dates: "Oct 2022 – Oct 2023"
     bullets:
       - "Built the HR function from the ground up at launch (recruitment, onboarding, core policies) for a team of 10."
       - "Designed and ran structured interviews and onboarding, drawing on motivation and person–role fit."
@@ -105,7 +108,7 @@ experience:
       - "Supervisor: Dr Donald Lyall."
   - title: "Living Support Assistant"
     organization: "University of Glasgow, Kelvinhaugh Residences"
-    dates: "Sep 2019 – Jun 2020"
+    dates: "Aug 2019 – Jun 2020"
     bullets:
       - "Overnight on-call welfare cover (18:00–07:00) for student residents, responding to emergencies including mental-health crises and safety incidents."
       - "Ran wellbeing check-ins and mediated flat conflicts; trained in Mental Health First Aid, First Aid, Fire and Life Safety, and mediation. Role ended due to COVID-19."
@@ -114,9 +117,9 @@ skills:
   - category: "Research and data"
     items: "R (basic: descriptive statistics, regression, composite scores); Python (basic: MNE-based EEG preprocessing in the OpenMIIR pipeline); IBM SPSS; Stata; Excel (advanced); questionnaire data management and codebooks; reflexive thematic analysis; systematic literature screening and narrative synthesis; digital brain atlas tools (QuickNII, MeshView); running IDyOM (Common Lisp)."
   - category: "Software"
-    items: "DocuSign, Notion, Obsidian, ClickUp, Canva Pro, Adobe Premiere, SoftOne, Microsoft Office, GitHub Pages."
+    items: "DocuSign, Notion, Obsidian, ClickUp, Canva Pro, Adobe Premiere, SoftOne, Microsoft Office, GitHub Pages, macOS and Windows."
   - category: "Certificates"
-    items: "Mental Health First Aid, First Aid, Fire and Life Safety (University of Glasgow, 2019); adverse-event reporting and compliance training (IQVIA)."
+    items: "ICH Good Clinical Practice (GCP), HIPAA privacy; Mental Health First Aid, First Aid, Fire and Life Safety (University of Glasgow, 2019); adverse-event reporting and compliance training (IQVIA)."
   - category: "Languages"
     items: "Greek (native); English (fluent); French (basic, learning)."
   - category: "Music and arts"
@@ -163,10 +166,6 @@ writing:
 # automatically left out of the generated PDF (see cv.md's cv-print-hide
 # logic) — set date to something else to bring it back into the PDF.
 courses:
-  - name: "IMB9345: Neuroscience Data Integration through Use of Digital Brain Atlases"
-    provider: "University of Oslo, Faculty of Medicine (Neural Systems Laboratory, EBRAINS)"
-    date: "Sep 2026"
-    note: "online PhD-level elective, 2 ECTS"
   - name: "Computational Neuroscience: Neuronal Dynamics"
     provider: "EPFL (edX)"
     date: "Paused"
@@ -180,9 +179,10 @@ courses:
 # Entries render as plain text, in the order listed. Keep "in preparation"
 # items marked as such until they are submitted or posted as preprints.
 publications:
-  - citation: "Varsou O., Walters M., Martinidou H., et al. Evaluation of the University of Glasgow–AAUP medical exchange programme: a transferable framework (working title). In preparation."
+  - citation: "Varsou O., Martinidou H., Walters M., et al. Evaluation of the University of Glasgow–AAUP medical exchange programme: a transferable framework (working title). In preparation."
   - citation: "Martinidou H., Lyall D. M. Mediterranean-style dietary components and self-reported depression: a cross-sectional analysis of 502,506 UK adults in the UK Biobank cohort. In preparation; preprint planned."
-  - citation: "Martinidou H., Theotokis P. Review on how sustained AI use may reshape brain networks (working title). In preparation for Current Issues in Molecular Biology (MDPI), special issue \"Neural Networks in Molecular and Cellular Neurobiology\"."
+  - citation: "Martinidou H., et al. Living with artificial neural networks: experience-dependent structural plasticity of the human brain in the age of AI (working title). To be submitted to Current Issues in Molecular Biology (MDPI), special issue \"Neural Networks in Molecular and Cellular Neurobiology\"."
+  - citation: "Chatzisavvidou A., et al. Molecular mechanisms underlying human neocortical evolution (working title). To be submitted to Current Issues in Molecular Biology (MDPI)."
 
 conferences:
   - name: "NeuroMonster Conference"

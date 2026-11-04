@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm Haidi Martinidou, a neuroscience researcher. I hold an MSc in Psychology & Neuroscience from King's College London and a BSc in Neuroscience from the University of Glasgow, and spend most of my time thinking about the brain, behaviour, and why people do what they do.
+I'm Haidi Martinidou, a neuroscientist. I hold an MSc in Psychology & Neuroscience from King's College London and a BSc in Neuroscience from the University of Glasgow, and spend most of my time thinking about the brain, behaviour, and why people do what they do.
 
 My MSc research (King's College London) was a narrative synthesis of fMRI, EEG, PET and TMS/tDCS studies on fairness processing and reward-risk prediction, concluding that prediction-error mechanisms underlie social fairness decisions. My BSc thesis (University of Glasgow) used UK Biobank data and logistic regression to test whether a Mediterranean diet pattern predicts depression risk. Since graduating I've moved toward computational and predictive-coding approaches to decision-making, currently building an EEG pipeline on music-imagery data and a model of procrastination as effort-cost discounting. What draws me to this is the question of when the brain's predictions go wrong, whether that's misattributing an internal thought as external, or failing to initiate an action whose cost outweighs its perceived value.
 
