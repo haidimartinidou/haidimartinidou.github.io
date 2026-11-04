@@ -21,7 +21,7 @@ permalink: /cv/
     {%- if cv.personal_info.phone %}<span>{{ cv.personal_info.phone }}</span>{% endif -%}
     {% for link in cv.personal_info.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
   </div>
-  <a class="cv-download" href="{{ '/assets/cv/Haidi_Martinidou_CV.pdf' | relative_url }}" download>Download CV (PDF)</a>
+  <a class="cv-download" href="{{ '/files/Martinidou_CV.pdf' | relative_url }}" download>Download CV (PDF)</a>
 </div>
 
 {% if cv.personal_info.interests %}
@@ -98,21 +98,6 @@ permalink: /cv/
     <li>
       {% if piece.url %}<a href="{{ piece.url }}">{{ piece.title }}</a>{% else %}{{ piece.title }}{% endif %}
       &mdash; {{ piece.outlet }}{% if piece.date %}, {{ piece.date }}{% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-{% endif %}
-
-{% assign active_courses = cv.courses | where_exp: "c", "c.date != 'Paused'" %}
-{% if cv.courses and cv.courses.size > 0 %}
-<section class="cv-section{% if active_courses.size == 0 %} cv-print-hide{% endif %}">
-  <h2>Courses</h2>
-  <ul class="cv-bullets">
-    {% for course in cv.courses %}
-    <li{% if course.date == "Paused" %} class="cv-print-hide"{% endif %}>
-      {% if course.certificate_url %}<a href="{{ course.certificate_url }}">{{ course.name }}</a>{% else %}{{ course.name }}{% endif %}
-      &mdash; {{ course.provider }}{% if course.date %}, {{ course.date }}{% endif %}{% if course.note %} ({{ course.note }}){% endif %}
     </li>
     {% endfor %}
   </ul>
