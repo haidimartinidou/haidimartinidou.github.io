@@ -1,15 +1,9 @@
 # Single source of truth for the CV page (/cv/).
 #
-# TODO(cv-update-nov-2026): the page's download button now points to the
-# manually-supplied /files/Martinidou_CV.pdf instead of the PDF this data
-# file used to drive. .github/workflows/cv-pdf.yml still regenerates
-# assets/cv/Haidi_Martinidou_CV.pdf on every push that touches this file,
-# but nothing links to that file any more — ask Haidi whether to retire
-# that workflow (and the stale generated PDF) or keep it for some other use.
-#
-# Gotcha: that workflow's Jekyll build breaks if _config.yml ever stops
-# excluding vendor/ (the gem cache the Action installs into gets scanned
-# as site content otherwise, and the build fails before the PDF renders).
+# The page's download button points to the manually-supplied
+# /files/Martinidou_CV.pdf. The old .github/workflows/cv-pdf.yml auto-PDF
+# workflow has been retired (2026-11) since nothing links to its output
+# any more; see that commit for removal details.
 #
 # personal_info.name/email/phone/links also feed the print-only centered
 # name/contact header in cv.md (the .cv-print-name / .cv-print-contact
@@ -23,11 +17,7 @@ personal_info:
   name: "Haidi Martinidou"
   tagline: "Neuroscience graduate (BSc Glasgow, MSc King's College London) interested in how chronic stress changes the brain's reward and memory systems to produce anhedonia and apathy, why some brains are more resilient, and whether protecting these systems earlier can delay dementia."
   summary: "My work combines large-cohort analysis, evidence synthesis and patient-facing research."
-  # TODO(cv-update-nov-2026): the previous aside linked to haidiartin
-  # (https://haidimartinidou.github.io/haidiartin/); the replacement text
-  # Haidi gave doesn't include a link. Left as plain text below — tell her
-  # the haidiartin link was dropped from /cv/ and ask whether to restore it.
-  aside: "I also make visual art: film and digital photography, painting and watercolour."
+  aside: 'I also make visual art: film and digital photography, painting and watercolour, at <a href="https://haidimartinidou.github.io/haidiartin/">haidiartin</a>.'
   interests: "Chronic stress and depression; reward processing and motivation (anhedonia, apathy); memory systems; stress resilience; dementia risk and prevention."
   email: "haidimartinidou@gmail.com"
   phone: "+30 694 2419907"
@@ -170,10 +160,7 @@ writing:
 # items marked as such until they are submitted or posted as preprints.
 publications:
   - citation: "Martinidou H., Lyall D. Mediterranean-style diet and depression in 502,359 UK Biobank participants: a cross-sectional study. Preprint in preparation (PsyArXiv)."
-  # TODO(cv-update-nov-2026): "Malik" has no first initial in Haidi's
-  # instructions (every other author here has one) — ask her whether an
-  # initial is missing before this goes out the door.
-  - citation: "Varsou O.*, Martinidou H.*, Malik, Walters M. Evaluation of the University of Glasgow–AAUP medical exchange programme: a transferable framework (working title). *Equal contribution. Manuscript in preparation."
+  - citation: "Varsou O.*, Martinidou H.*, Malik Z., Walters M. Evaluation of the University of Glasgow–AAUP medical exchange programme: a transferable framework (working title). *Equal contribution. Manuscript in preparation."
   - citation: "Martinidou H., et al. Living with artificial neural networks: experience-dependent structural plasticity of the human brain in the age of AI (working title). To be submitted to Current Issues in Molecular Biology (MDPI)."
   - citation: "Chatzisavvidou A., et al. Molecular mechanisms underlying human neocortical evolution (working title). To be submitted to Current Issues in Molecular Biology (MDPI)."
 
@@ -202,9 +189,6 @@ references:
   - name: "Dr Donald Lyall"
     affiliation: "University of Glasgow"
     note: "BSc dissertation supervisor. Email on request."
-  # TODO(cv-update-nov-2026): Haidi didn't say what her working relationship
-  # with Dr Theotokis is (the other two references each note why they're a
-  # reference). Left the note as just contact info — ask her what to add.
   - name: "Dr Paschalis Theotokis"
     affiliation: "Assistant Professor of Histology-Embryology, Aristotle University of Thessaloniki"
-    note: "Email on request."
+    note: "Current research supervisor and collaborator. Email on request."
