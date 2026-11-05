@@ -3,15 +3,37 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
-<ol class="index-list">
-  {% for project in site.projects %}
-  <li class="index-row">
-    <span class="index-num">{{ forloop.index | plus: 100 | slice: 1, 2 }}</span>
-    <div class="index-content">
-      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-      <span class="status-tag status-{{ project.status }}">{{ project.status }}</span>
-      <span class="index-meta">{{ project.summary }}</span>
-    </div>
-  </li>
-  {% endfor %}
-</ol>
+{% assign research = site.projects | where: "category", "research" | sort: "order" %}
+{% assign software = site.projects | where: "category", "software" | sort: "order" %}
+
+<section class="cv-section">
+  <h2>Research</h2>
+  <ol class="index-list">
+    {% for project in research %}
+    <li class="index-row">
+      <span class="index-num">{{ forloop.index | plus: 100 | slice: 1, 2 }}</span>
+      <div class="index-content">
+        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        <span class="status-tag status-{{ project.status }}">{{ project.status | replace: '-', ' ' }}</span>
+        <span class="index-meta">{{ project.summary }}</span>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="cv-section">
+  <h2>Software</h2>
+  <ol class="index-list">
+    {% for project in software %}
+    <li class="index-row">
+      <span class="index-num">{{ forloop.index | plus: 100 | slice: 1, 2 }}</span>
+      <div class="index-content">
+        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        <span class="status-tag status-{{ project.status }}">{{ project.status | replace: '-', ' ' }}</span>
+        <span class="index-meta">{{ project.summary }}</span>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>

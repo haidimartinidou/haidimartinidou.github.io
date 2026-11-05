@@ -1,10 +1,14 @@
 ---
 title: "EEG / IDyOM Pipeline"
 status: ongoing
+category: research
+order: 5
 date_started: "July 2026"
 repo_url: "https://github.com/haidimartinidou/eegmodeling-openmiir"
 summary: "A four-stage EEG pipeline on the OpenMIIR music-imagery dataset, using IDyOM to derive per-note surprise and entropy as predictors of the EEG response to heard and imagined melodies."
 ---
+
+<!-- TODO: confirm status — still "ongoing", or has this paused? -->
 
 Self-directed, reproducible pipeline built and maintained independently alongside coursework: preprocessing, stimulus predictor modelling, TRF encoding, and a generative predictive-coding simulation.
 

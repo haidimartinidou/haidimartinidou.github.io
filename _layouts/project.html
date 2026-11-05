@@ -3,10 +3,12 @@ layout: default
 ---
 <article class="post">
   <a class="back-link" href="{{ '/projects/' | relative_url }}">&larr; Projects</a>
-  <h1>{{ page.title }} <span class="status-tag status-{{ page.status }}">{{ page.status }}</span></h1>
+  <h1>{{ page.title }} <span class="status-tag status-{{ page.status }}">{{ page.status | replace: '-', ' ' }}</span></h1>
+  {%- if page.date_started or page.repo_url %}
   <p class="post-meta">
-    Started {{ page.date_started }}
-    {%- if page.repo_url %} &middot; <a href="{{ page.repo_url }}">Repository</a>{% endif -%}
+    {%- if page.date_started %}Started {{ page.date_started }}{% endif -%}
+    {%- if page.repo_url %}{% if page.date_started %} &middot; {% endif %}<a href="{{ page.repo_url }}">{{ page.link_label | default: "Repository" }}</a>{% endif -%}
   </p>
+  {%- endif %}
   {{ content }}
 </article>

@@ -229,6 +229,7 @@ main.wrap {
 .status-tag.status-ongoing { border-color: var(--ink-soft); color: var(--ink-soft); }
 .status-tag.status-shipped { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 .status-tag.status-paused { color: var(--ink-soft); border-style: dashed; }
+.status-tag.status-in-preparation { color: var(--ink-soft); border-style: dotted; }
 
 /* Post / page */
 h1 { font-size: 1.6rem; }
