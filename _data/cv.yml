@@ -90,7 +90,7 @@ experience:
     subtitle: "\"The Connection Between Processing Fairness and Reward-Risk Prediction in the Human Brain\""
     bullets:
       - "Narrative synthesis screening over 350 papers and synthesising 10 in depth, across fMRI, EEG, PET, TMS, and tDCS."
-      - "Concluded that reinforcement-learning prediction-error mechanisms underpin social decision-making, linking reward computation to processes usually studied separately in the fairness literature."
+      - "Found valuation and prediction-error signals across methods, but the literature could not show whether an unfair outcome drives learning or reflects a stable way of weighting outcomes."
       - "Supervisor: Dr Gisele Dias."
   - title: "Undergraduate Dissertation — Diet and Depression Risk"
     organization: "University of Glasgow"

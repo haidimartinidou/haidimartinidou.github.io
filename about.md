@@ -4,7 +4,6 @@ title: About
 permalink: /about/
 ---
 
-<!-- TODO: you wrote "neuroscience researcher" in your brief, but the rest of the site (homepage, /cv/) now says "neuroscientist" since the Nov 2026 voice update. Kept "neuroscientist" here for consistency, flagging in case you meant to revert it everywhere. -->
 I'm Haidi Martinidou, a neuroscientist based in Thessaloniki. I hold an MSc in Psychology and Neuroscience of Mental Health (Merit) from King's College London and a BSc (Hons) in Neuroscience from the University of Glasgow. Since July 2026 I have been an affiliate researcher at Glasgow with Dr Ourania Varsou.
 
 The question I want to work on is how chronic stress changes the brain's reward and memory systems to produce anhedonia and apathy, and why some brains withstand the same stress. Longer term, I want to ask whether protecting these systems earlier can delay or prevent dementia.

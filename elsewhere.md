@@ -39,7 +39,6 @@ permalink: /elsewhere/
       <h2>Parallaxi Magazine</h2>
     </div>
     <p>Parallaxi is an independent magazine based in Thessaloniki, Greece, covering culture, public life and social commentary, roughly equivalent to an alternative city paper. I have contributed essays connecting neuroscience to music, technology and society since 2023.</p>
-    <!-- TODO: add any further Parallaxi article links -->
     <ul class="index-list index-list--tight">
       <li class="index-row">
         <div class="index-content">
