@@ -21,7 +21,6 @@ permalink: /cv/
     {%- if cv.personal_info.phone %}<span>{{ cv.personal_info.phone }}</span>{% endif -%}
     {% for link in cv.personal_info.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
   </div>
-  <a class="cv-download" href="{{ '/files/Martinidou_CV.pdf' | relative_url }}" download>Download one-page short CV</a>
 </div>
 
 {% if cv.personal_info.interests %}
@@ -142,3 +141,7 @@ permalink: /cv/
   </ul>
 </section>
 {% endif %}
+
+<section class="cv-section cv-footer-download">
+  <a class="cv-download" href="{{ '/files/Martinidou_CV.pdf' | relative_url }}" download>Download one-page short CV</a>
+</section>

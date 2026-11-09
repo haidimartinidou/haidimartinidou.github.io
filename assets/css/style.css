@@ -270,6 +270,9 @@ h1 { font-size: 1.6rem; }
   background: var(--ink-soft);
   color: var(--bg);
 }
+.cv-footer-download {
+  text-align: center;
+}
 
 blockquote {
   border-left: 2px solid var(--line-strong);
