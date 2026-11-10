@@ -127,6 +127,10 @@ main.wrap {
   margin: 0;
   font-size: 1.05rem;
 }
+.hero p.hero-links {
+  margin-top: 14px;
+  font-size: 0.9rem;
+}
 
 /* Homepage sections (thin-line blocks) */
 .home-block {
@@ -230,6 +234,7 @@ main.wrap {
 .status-tag.status-shipped { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 .status-tag.status-paused { color: var(--ink-soft); border-style: dashed; }
 .status-tag.status-in-preparation { color: var(--ink-soft); border-style: dotted; }
+.status-tag.status-preprint { border-color: var(--ink-soft); color: var(--ink-soft); }
 
 /* Post / page */
 h1 { font-size: 1.6rem; }
